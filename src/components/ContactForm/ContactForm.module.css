@@ -7,8 +7,10 @@
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 25px;
+    gap: 15px;
 }
 
-.formInput {
-    margin-bottom: 20px;
+.err {
+    color: red;
+    font-size: small;
 }

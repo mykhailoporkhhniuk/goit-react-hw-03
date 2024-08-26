@@ -1,4 +1,4 @@
-import { Field, Form, Formik } from "formik"
+import { Field, Form, Formik, ErrorMessage } from "formik"
 import * as Yup from 'yup'
 import css from './ContactForm.module.css'
 
@@ -35,10 +35,12 @@ const ContactForm = ({ onAddContact }) => {
                 <label>
                     Name
                     <Field className={css.formInput} type="text" name="contactName"></Field>
+                    <ErrorMessage className={css.err} name="contactName" component="span" />
                 </label>
                 <label>
                     Number
                     <Field className={css.formInput} type="tell" name="contactNumber"></Field>
+                    <ErrorMessage className={css.err} name="contactNumber" component="span" />
                 </label>
                 <button type="Submit">Add contact</button>
             </Form>
